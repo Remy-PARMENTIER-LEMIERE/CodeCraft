@@ -8,9 +8,13 @@ const Navbar = () => {
   return (
     <section className="navbar">
       <section className="section">
-        <section onClick={() => setOpenHTML(!openHTML)} className="title">
+        <button
+          type="button"
+          onClick={() => setOpenHTML(!openHTML)}
+          className="title"
+        >
           HTML {openHTML ? "▾" : "▸"}
-        </section>
+        </button>
         {openHTML && (
           <ul className="submenu">
             <li>Implémenter un titre</li>
@@ -21,9 +25,13 @@ const Navbar = () => {
       </section>
 
       <section className="section">
-        <section onClick={() => setOpenCSS(!openCSS)} className="title">
+        <button
+          type="button"
+          onClick={() => setOpenCSS(!openCSS)}
+          className="title"
+        >
           CSS {openCSS ? "▾" : "▸"}
-        </section>
+        </button>
         {openCSS && (
           <ul className="submenu">
             <li>Changer la couleur de fond</li>

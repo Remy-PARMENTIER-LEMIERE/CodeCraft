@@ -1,66 +1,68 @@
 .navbar {
-    width: 260px;
-    background-color: #ffffff;
-    height: 100vh;
-    padding: 24px 20px;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    font-family: 'Segoe UI', sans-serif;
-    border-right: 1px solid #e0e0e0;
-  }
+  width: 260px;
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 24px 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  font-family: "Segoe UI", sans-serif;
+  border-right: 1px solid #e0e0e0;
+}
 
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 auto 20px auto;
-    color: #444;
-    transition: background 0.2s;
-  }
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto 20px auto;
+  color: #444;
+  transition: background 0.2s;
+}
 
-  .close-btn:hover {
-    background-color: #f0f0f0;
-  }
+.close-btn:hover {
+  background-color: #f0f0f0;
+}
 
-  .section {
-    margin-bottom: 24px;
-  }
+.section {
+  margin-bottom: 24px;
+}
 
-  .title {
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    border-radius: 6px;
-    transition: background 0.2s;
-  }
+.title {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  border: none;
+  background: transparent;
+}
 
-  .title:hover {
-    background-color: #f9f9f9;
-  }
+.title:hover {
+  background-color: #f9f9f9;
+}
 
-  .submenu {
-    list-style: none;
-    padding-left: 16px;
-    margin: 8px 0 0 0;
-  }
+.submenu {
+  list-style: none;
+  padding-left: 16px;
+  margin: 8px 0 0 0;
+}
 
-  .submenu li {
-    font-size: 14px;
-    margin: 6px 0;
-    color: #555;
-    cursor: pointer;
-    transition: color 0.2s;
-  }
+.submenu li {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s;
+}
 
-  .submenu li:hover {
-    color: #000;
-  }
+.submenu li:hover {
+  color: #000;
+}
