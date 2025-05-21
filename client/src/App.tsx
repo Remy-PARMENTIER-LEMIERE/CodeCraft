@@ -1,10 +1,14 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar";
 
 function App() {
-  return <>
-  <Navbar/>
-  </>;
+  return (
+    <>
+      <Header />
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
