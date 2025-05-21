@@ -1,16 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 8px;
+  border-bottom: 1px solid var(--third-color);
 
   img {
     height: 50px;
@@ -24,6 +17,7 @@ header {
     justify-self: self-start;
     font-size: 2rem;
     font-family: var(--title-font);
+    color: var(--second-color);
   }
 
   button {
@@ -39,7 +33,7 @@ header {
     span::before {
       height: 7px;
       width: 32px;
-      background-color: black;
+      background-color: var(--second-color);
       border-radius: 4px;
     }
 
