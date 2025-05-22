@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         path: "/*",
         element: <Error404 />,
       },
-    ]
+    ],
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
