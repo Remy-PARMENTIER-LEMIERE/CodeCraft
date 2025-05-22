@@ -56,7 +56,7 @@ export const questsData = {
     },
     {
       id: "c2",
-      category: "CSS",
+      category: "css",
       image: { src: "./images/css.svg" },
       quests: [
         {

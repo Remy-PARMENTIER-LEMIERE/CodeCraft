@@ -1,4 +1,23 @@
-.card {
+.contenu {
+text-align: center;
+
+img {
+width: 370px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+  .contenu {
+  margin-left: 260px;
+  width: calc(100vh, 260px);
+  padding: 2rem;
+  }
+
+}
+
+
+/* .card {
     border: 1px solid #ccc;
     margin: 1rem;
     padding: 1rem;
@@ -7,4 +26,4 @@
   img {
     display: block;
     margin-top: 0.5rem;
-  }
+  } */

@@ -49,3 +49,8 @@
 .submenu li:hover {
   color: #000;
 }
+@media screen and (max-width: 1200px) {
+.navbar {
+display: none;
+}
+}
