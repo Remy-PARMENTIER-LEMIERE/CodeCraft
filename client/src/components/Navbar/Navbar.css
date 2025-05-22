@@ -49,3 +49,7 @@
 .submenu li:hover {
   color: #000;
 }
+
+a {
+  text-decoration: none;
+}

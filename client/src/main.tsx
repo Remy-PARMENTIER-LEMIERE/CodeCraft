@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Import the main app component
 import App from "./App";
+import ComingSoon from "./pages/ComingSoon/ComingSoon";
 import Error404 from "./pages/Error404/Error404";
 import Home from "./pages/Home/Home";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         path: "/*",
         element: <Error404 />,
       },
+      {
+        path: "/comingsoon",
+        element: <ComingSoon />
+      }
     ],
   },
   // Try adding a new route! For example, "/about" with an About component
