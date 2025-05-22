@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import "./Error404.css";
 
 function Error404() {
@@ -7,10 +8,11 @@ function Error404() {
             <h1>
                 Oh non, il semblerait que vous vous soyez perdu
             </h1>
-            <button type="button">
-                Retour à l'accueil
-            </button>
-
+            <NavLink to="/">
+                <button type="button">
+                    Retour à l'accueil
+                </button>
+            </NavLink>
         </article>
     )
 }
