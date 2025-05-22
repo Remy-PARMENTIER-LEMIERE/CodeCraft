@@ -9,7 +9,7 @@ function Editor() {
       </section>
       <section className="rendu">
         <h2>Rendu</h2>
-        <textarea className="textarerendu" />
+        <div className="textarerendu" />
       </section>
     </section>
   );
