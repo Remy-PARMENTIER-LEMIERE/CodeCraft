@@ -7,6 +7,8 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Import the main app component
 import App from "./App";
+import Error404 from "./pages/Error404/Error404";
+import Home from "./pages/Home/Home";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -20,8 +22,17 @@ import App from "./App";
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
   {
-    path: "/", // The root path
     element: <App />, // Renders the App component for the home page
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/*",
+        element: <Error404 />,
+      },
+    ]
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
