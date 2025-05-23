@@ -24,13 +24,13 @@ function QuestPage() {
   return (
     <main className="quest-page">
       <h1>{preciseQuestData.title}</h1>
-      {/* {preciseQuestData.image && (
+      {preciseQuestData.image && (
         <img
           src={preciseQuestData.image.src}
           alt={preciseQuestData.image.alt}
         />
-      )} */}
-      {preciseQuestData.paragraph.map((uniqueParagraph) => (
+      )}
+      {preciseQuestData.paragraph?.map((uniqueParagraph) => (
         <p key={preciseQuestData.paragraph.indexOf(uniqueParagraph)}>
           {uniqueParagraph}
         </p>

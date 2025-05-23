@@ -16,6 +16,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     width: 95%;
+    height: unset;
     margin: 0 auto;
     p {
       font-size: 1.5rem;
