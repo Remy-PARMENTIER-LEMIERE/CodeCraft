@@ -4,6 +4,7 @@ header {
   align-items: center;
   padding: 8px;
   border-bottom: 1px solid var(--third-color);
+  background-color: var(--primary-color);
 
   img {
     height: 50px;
