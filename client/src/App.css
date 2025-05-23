@@ -1,7 +1,32 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat.ttf);
+}
+:root {
+  --primary-color: rgb(243, 243, 243);
+  --second-color: #333;
+  --third-color: #cfcfcf;
+
+  --title-font: "Roboto", sans-serif;
+  --texts-font: "Montserrat", sans-serif;
+}
+
 * {
   box-sizing: border-box;
+  font-family: var(--texts-font);
 }
 
 body {
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
 }

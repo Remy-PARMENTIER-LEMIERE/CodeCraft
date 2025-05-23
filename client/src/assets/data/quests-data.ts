@@ -36,11 +36,11 @@ export const questsData = {
             "Plus qu'à essayer ! Pense toujours bien à l'écrire dans la balise body.",
           ],
           image: {
-            src: "https://pixabay.com/fr/illustrations/carnet-portable-informatique-1071537/",
+            src: "https://cdn.pixabay.com/photo/2015/12/01/03/24/computer-1071537_1280.png",
             alt: "Ordinateur portable rouge",
           },
           sandboxUrl:
-            "https://codesandbox.io/embed/5d53cv?view=split&module=%2Findex.html&hidenavigation=1",
+            "https://cdn.pixabay.com/photo/2015/12/01/03/24/computer-1071537_1280.png",
           confirmCondition: `textarea.value.includes("<p>") &&
               textarea.value.includes("</p>")`,
         },
@@ -55,7 +55,7 @@ export const questsData = {
             'Essaye avec ce lien : "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg"',
           ],
           image: {
-            src: "https://pixabay.com/fr/illustrations/ai-g%C3%A9n%C3%A9r%C3%A9-robot-portable-%C3%A9crivez-8741448/",
+            src: "https://cdn.pixabay.com/photo/2024/05/05/16/30/ai-generated-8741448_1280.jpg",
             alt: "Petit robot utilisant un ordinateur",
           },
           sandboxUrl:
@@ -70,7 +70,7 @@ export const questsData = {
     {
       id: "c2",
       category: "css",
-      image: { src: "./images/css.svg" },
+      image: { src: "/src/assets/images/css.svg", alt: "Illustration css" },
       quests: [
         {
           id: "css1",
@@ -80,7 +80,7 @@ export const questsData = {
             "On peut entre autres changer la couleur de fond d'une page ou d'un élément en utilisant la propriété \"background-color: couleur\", où le mot couleur désigne celle que l'on souhaite utiliser (du rose, du bleu, tout est possible !)",
           ],
           image: {
-            src: "https://www.istockphoto.com/fr/vectoriel/illustration-de-dessin-anim%C3%A9-%C3%A0-plat-concept-de-d%C3%A9veloppement-web-gm1477243684-505912779?utm_source=pixabay&utm_medium=affiliate&utm_campaign=limited-results_illustration&utm_content=srp_topbannerNone_media&utm_term=css",
+            src: "https://media.istockphoto.com/id/1477243684/fr/vectoriel/illustration-de-dessin-anim%C3%A9-%C3%A0-plat-concept-de-d%C3%A9veloppement-web.jpg?s=2048x2048&w=is&k=20&c=CxNLhatFLdnfczsBpXr5GssJYIxt9D2NpEgoqgvb6Fc=",
             alt: "Illustration CSS",
           },
           sandboxUrl:
@@ -94,7 +94,10 @@ export const questsData = {
             'Pour arrondir les bords, tu peux utiliser la propriété "border-radius: valeur;" pour l\'unité de la valeur, tu peux utiliser le pixel par exemple avec son diminutif px.',
             "Tu peux donc écrire 25px, ou choisir des valeur plus petites ou plus grandes pour voir les bords devenir plus ou moins ronds. A toi de jouer !",
           ],
-          image: { src: "./images/border-radius.png" },
+          image: {
+            src: "/src/assets/images/border-radius.png",
+            alt: "Illustration css",
+          },
           sandboxUrl:
             "https://codesandbox.io/embed/34mf26?view=split&module=%2Fstyles.css",
           confirmCondition: `textarea.value.includes("border-radius:") &&
@@ -108,7 +111,7 @@ export const questsData = {
             "Sache qu'il n'existe pas que la valeur center pour cette propriété, n'hésite surtout pas à chercher et tester d'autres styles si cela t'intéresse.",
           ],
           image: {
-            src: "https://pixabay.com/fr/illustrations/travail-autonome-programmation-7308505/",
+            src: "https://cdn.pixabay.com/photo/2022/07/08/05/38/freelance-work-7308505_1280.png",
             alt: "Illustration programmation",
           },
           sandboxUrl:

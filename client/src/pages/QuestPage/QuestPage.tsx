@@ -30,11 +30,13 @@ function QuestPage() {
           alt={preciseQuestData.image.alt}
         />
       )}
-      {preciseQuestData.paragraph?.map((uniqueParagraph) => (
-        <p key={preciseQuestData.paragraph.indexOf(uniqueParagraph)}>
-          {uniqueParagraph}
-        </p>
-      ))}
+      <article>
+        {preciseQuestData.paragraph?.map((uniqueParagraph) => (
+          <p key={preciseQuestData.paragraph.indexOf(uniqueParagraph)}>
+            {uniqueParagraph}
+          </p>
+        ))}
+      </article>
       <iframe
         src={preciseQuestData.sandboxUrl}
         title={preciseQuestData.id}

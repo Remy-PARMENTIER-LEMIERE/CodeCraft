@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
+  justify-content: center;
+  padding: 16px;
   gap: 2rem;
+  min-height: 80vh;
+  background-color: var(--primary-color);
+  color: var(--second-color);
 
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -15,19 +19,24 @@
   }
 
   p {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 1.2rem;
   }
 
-  button {
-    height: 2rem;
-    width: 8rem;
+  a {
     border-radius: 2rem;
-    background-color: #f9f9f9;
+    color: var(--second-color);
+    padding: 16px 32px;
+    border: 2px solid var(--second-color);
+    cursor: pointer;
   }
 
-  button:hover {
-    background-color: #b1ababde;
-    cursor: pointer;
+  a:hover {
+    background-color: var(--third-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .coming-soon {
+    min-height: calc(100vh - 70px - 85px);
   }
 }
