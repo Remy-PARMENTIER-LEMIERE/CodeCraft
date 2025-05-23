@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .navbar {
+    display: block !important;
+  }
+
+  .burger-menu {
+    display: none !important;
+  }
+}

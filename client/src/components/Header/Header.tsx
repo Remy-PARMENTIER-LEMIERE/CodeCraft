@@ -1,7 +1,12 @@
 import { NavLink } from "react-router";
 import "./Header.css";
 
-function Header() {
+interface NavProps {
+  toggleNavbar: () => void;
+  isNavbarOpen: boolean;
+}
+
+function Header({ toggleNavbar, isNavbarOpen }: NavProps) {
   return (
     <header>
       <NavLink to="/">
@@ -11,8 +16,13 @@ function Header() {
         />
       </NavLink>
       <h2>CodeCraft</h2>
-      <button type="button" className="burger-menu">
-        <span />
+      <button
+        type="button"
+        className="burger-menu"
+        onClick={toggleNavbar}
+        aria-label="Toggle menu"
+      >
+        <span className={`${isNavbarOpen ? "show-nav" : "hide-nav"}`} />
       </button>
     </header>
   );
