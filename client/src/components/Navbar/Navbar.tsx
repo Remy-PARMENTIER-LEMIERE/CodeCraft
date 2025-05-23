@@ -1,65 +1,53 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import "./Navbar.css";
+import questsData from "../../assets/data/quests-data";
 
 interface OpenProps {
   isOpen: boolean;
 }
 
 const Navbar = ({ isOpen }: OpenProps) => {
-  const [openHTML, setOpenHTML] = useState(false);
-  const [openCSS, setOpenCSS] = useState(false);
+  const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const toggleCategory = (categoryId: string) => {
+    setOpenCategory(openCategory === categoryId ? null : categoryId);
+  };
 
   return (
     <section className={`navbar ${isOpen ? "open" : ""}`}>
       <section className="logo">
-        <img src="src/assets/images/logo_codecraft.webp" alt="logo codecraft" />
-      </section>
-      <section className="section">
-        <button
-          type="button"
-          onClick={() => setOpenHTML(!openHTML)}
-          className="title"
-        >
-          HTML {openHTML ? "▾" : "▸"}
-        </button>
-        {openHTML && (
-          <ul className="submenu">
-            <li>Implémenter un titre</li>
-            <li>Implémenter un paragraphe</li>
-            <li>Implémenter une image</li>
-          </ul>
-        )}
+        <img
+          src="/src/assets/images/logo_codecraft.webp"
+          alt="logo codecraft"
+        />
       </section>
 
-      <section className="section">
-        <button
-          type="button"
-          onClick={() => setOpenCSS(!openCSS)}
-          className="title"
-        >
-          CSS {openCSS ? "▾" : "▸"}
-        </button>
-        {openCSS && (
-          <ul className="submenu">
-            <li>Changer la couleur de fond</li>
-            <li>Arrondir les bords</li>
-            <NavLink to="/comingsoon">
-              <li>Mettre une hauteur</li>
-            </NavLink>
-            <NavLink to="/comingsoon">
-              <li>Définir une largeur</li>
-            </NavLink>
-            <li>Centrer du texte</li>
-            <NavLink to="/comingsoon">
-              <li>Centrer latéralement un élément</li>
-            </NavLink>
-            <NavLink to="/comingsoon">
-              <li>Centrer verticalement un élément</li>
-            </NavLink>
-          </ul>
-        )}
-      </section>
+      {questsData.data.map((category) => (
+        <section className="section" key={category.id}>
+          <button
+            type="button"
+            onClick={() => toggleCategory(category.id)}
+            className="title"
+          >
+            {category.category.toUpperCase()}{" "}
+            {openCategory === category.id ? "▾" : "▸"}
+          </button>
+
+          {openCategory === category.id && (
+            <ul className="submenu">
+              {category.quests.map((quest) => (
+                <NavLink
+                  to={`/quest/${quest.id}`}
+                  key={quest.id}
+                  className="submenu-link"
+                >
+                  <li>{quest.title}</li>
+                </NavLink>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))}
     </section>
   );
 };
