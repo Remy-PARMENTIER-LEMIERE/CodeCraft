@@ -49,8 +49,15 @@
 .submenu li:hover {
   color: #000;
 }
+
+
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
 .navbar {
 display: none;
 }
 }
+

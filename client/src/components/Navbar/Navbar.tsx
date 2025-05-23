@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -36,11 +37,11 @@ const Navbar = () => {
           <ul className="submenu">
             <li>Changer la couleur de fond</li>
             <li>Arrondir les bords</li>
-            <li>Mettre une hauteur</li>
-            <li>Définir une largeur</li>
+            <NavLink to="/comingsoon" ><li>Mettre une hauteur</li></NavLink>
+            <NavLink to="/comingsoon" ><li>Définir une largeur</li></NavLink>
             <li>Centrer du texte</li>
-            <li>Centrer latéralement un élément</li>
-            <li>Centrer verticalement un élément</li>
+            <NavLink to="/comingsoon" ><li>Centrer latéralement un élément</li></NavLink>
+            <NavLink to="/comingsoon" ><li>Centrer verticalement un élément</li></NavLink>
           </ul>
         )}
       </section>
