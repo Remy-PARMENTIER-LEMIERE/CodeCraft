@@ -5,9 +5,10 @@ import questsData from "../../assets/data/quests-data";
 
 interface OpenProps {
   isOpen: boolean;
+  handleCloseMenu: () => void;
 }
 
-const Navbar = ({ isOpen }: OpenProps) => {
+const Navbar = ({ isOpen, handleCloseMenu }: OpenProps) => {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
   const toggleCategory = (categoryId: string) => {
     setOpenCategory(openCategory === categoryId ? null : categoryId);
@@ -16,7 +17,7 @@ const Navbar = ({ isOpen }: OpenProps) => {
   return (
     <section className={`navbar ${isOpen ? "open" : ""}`}>
       <section className="logo">
-        <Link to="/">
+        <Link to="/" onClick={handleCloseMenu}>
           <img
             src="/src/assets/images/logo_codecraft.webp"
             alt="logo codecraft"
@@ -42,6 +43,7 @@ const Navbar = ({ isOpen }: OpenProps) => {
                   to={quest.sandboxUrl ? `/quest/${quest.id}` : "/comingsoon"}
                   key={quest.id}
                   className="submenu-link"
+                  onClick={handleCloseMenu}
                 >
                   <li>{quest.title}</li>
                 </NavLink>

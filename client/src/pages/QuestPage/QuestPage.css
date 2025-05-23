@@ -1,8 +1,7 @@
 .quest-page {
   text-align: center;
-  width: 92%;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 24px 4%;
   background-color: var(--primary-color);
 
   h1 {
