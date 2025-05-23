@@ -104,4 +104,4 @@ export const questsData = {
   ],
 };
 
-// export default data;
+export default questsData
