@@ -3,10 +3,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px;
-  width: 100vw;
   height: 10vh;
   border-bottom: 1px solid var(--third-color);
   background-color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 
   img {
     height: 50px;
@@ -43,7 +43,7 @@ header {
       position: relative;
       margin-right: 4px;
       display: inline-block;
-      background-color: black;
+      background-color: var(--second-color);
     }
 
     span::before,
@@ -51,7 +51,7 @@ header {
       content: "";
       position: absolute;
       left: 0;
-      background-color: black;
+      background-color: var(--second-color);
     }
 
     span::before {
@@ -78,6 +78,9 @@ header {
 @media screen and (min-width: 1200px) {
   header {
     justify-content: center;
+    height: 70px;
+    width: calc(100vw - 260px);
+    margin-left: 260px;
 
     img {
       display: none;

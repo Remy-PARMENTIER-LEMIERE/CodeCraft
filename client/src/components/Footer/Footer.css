@@ -3,9 +3,13 @@ footer {
   grid-template-columns: 4fr 80px 80px;
   place-items: center;
   height: 10vh;
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--third-color);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
 
   p {
     margin: 0;
+    color: var(--second-color);
   }
 
   img {
@@ -15,14 +19,14 @@ footer {
 
 @media (min-width: 992px) {
   footer {
-    width: 95%;
-    margin: 0 auto;
     height: unset;
     padding: 16px;
+    width: calc(100vw - 260px);
+    margin-left: 260px;
 
     p {
       font-size: 1.5rem;
-      padding: 0 0 0 160px;
+      padding: 0 0 0 230px;
     }
   }
 }

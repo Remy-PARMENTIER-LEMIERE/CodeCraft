@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 
 interface OpenProps {
@@ -13,7 +13,12 @@ const Navbar = ({ isOpen }: OpenProps) => {
   return (
     <section className={`navbar ${isOpen ? "open" : ""}`}>
       <section className="logo">
-        <img src="src/assets/images/logo_codecraft.webp" alt="logo codecraft" />
+        <Link to="/">
+          <img
+            src="/src/assets/images/logo_codecraft.webp"
+            alt="logo codecraft"
+          />
+        </Link>
       </section>
       <section className="section">
         <button
