@@ -30,3 +30,7 @@ h3,
 h4 {
   font-family: var(--title-font);
 }
+
+a {
+  color: var(--second-color);
+}

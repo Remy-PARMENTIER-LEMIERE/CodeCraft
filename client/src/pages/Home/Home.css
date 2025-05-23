@@ -1,9 +1,11 @@
 .home {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
 }
 
 .home_intro {
@@ -32,4 +34,12 @@
   line-height: 1.6;
   max-width: 700px;
   margin: 1rem auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    min-height: calc(100vh - 70px - 85px);
+    width: calc(100vw - 260px);
+    margin-left: 260px;
+  }
 }
