@@ -37,14 +37,14 @@ header {
       width: 32px;
       border-radius: 4px;
     }
-    
+
     span {
       position: relative;
       margin-right: 4px;
       display: inline-block;
       background-color: black;
     }
-    
+
     span::before,
     span::after {
       content: "";
@@ -52,22 +52,22 @@ header {
       left: 0;
       background-color: black;
     }
-    
+
     span::before {
       transform: translateY(-14px);
     }
-    
+
     span::after {
       transform: translateY(14px);
     }
     .show-nav span {
       background: transparent;
     }
-    
+
     .show-nav span::before {
       transform: rotate(45deg);
     }
-    
+
     .show-nav span::after {
       transform: rotate(-45deg);
     }

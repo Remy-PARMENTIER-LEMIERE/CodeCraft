@@ -14,7 +14,10 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar isOpen={isNavbarOpen} />
-      <Header toggleNavbar={() => setIsNavbarOpen(!isNavbarOpen)} isNavbarOpen={isNavbarOpen}/>
+      <Header
+        toggleNavbar={() => setIsNavbarOpen(!isNavbarOpen)}
+        isNavbarOpen={isNavbarOpen}
+      />
       <main>{children}</main>
     </>
   );

@@ -7,8 +7,10 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Import the main app component
 import App from "./App";
+import ComingSoon from "./pages/ComingSoon/ComingSoon";
 import Error404 from "./pages/Error404/Error404";
 import Home from "./pages/Home/Home";
+import QuestPage from "./pages/QuestPage/QuestPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -29,8 +31,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/quest/:id",
+        element: <QuestPage />,
+      },
+      {
         path: "/*",
         element: <Error404 />,
+      },
+      {
+        path: "/comingsoon",
+        element: <ComingSoon />,
       },
     ],
   },

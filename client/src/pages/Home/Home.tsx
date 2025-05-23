@@ -1,5 +1,4 @@
 import "./Home.css";
-import Editor from "../../components/Editor/Editor";
 
 export default function Home() {
   return (
@@ -7,7 +6,6 @@ export default function Home() {
       <article className="home">
         <h1>Je suis une page d'accueil</h1>
       </article>
-      <Editor />
     </section>
   );
 }

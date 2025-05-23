@@ -59,6 +59,10 @@
   transition: color 0.2s;
 }
 
+a {
+  text-decoration: none;
+}
+
 .submenu li:hover {
   color: #000;
 }
