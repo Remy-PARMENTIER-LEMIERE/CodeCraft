@@ -40,7 +40,7 @@ export const questsData = {
             alt: "Ordinateur portable rouge",
           },
           sandboxUrl:
-            "https://cdn.pixabay.com/photo/2015/12/01/03/24/computer-1071537_1280.png",
+            "https://codesandbox.io/embed/5d53cv?view=editor+%2B+preview&hidenavigation=1",
           confirmCondition: `textarea.value.includes("<p>") &&
               textarea.value.includes("</p>")`,
         },
