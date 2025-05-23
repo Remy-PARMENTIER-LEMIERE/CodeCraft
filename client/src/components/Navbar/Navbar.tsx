@@ -39,7 +39,7 @@ const Navbar = ({ isOpen }: OpenProps) => {
             <ul className="submenu">
               {category.quests.map((quest) => (
                 <NavLink
-                  to={`/quest/${quest.id}`}
+                  to={quest.sandboxUrl ? `/quest/${quest.id}` : "/comingsoon"}
                   key={quest.id}
                   className="submenu-link"
                 >
