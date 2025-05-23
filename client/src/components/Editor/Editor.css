@@ -1,6 +1,7 @@
 .editor {
   display: flex;
   flex-direction: space-between;
+  flex-wrap: wrap;
 }
 .codeinput {
   display: flex;

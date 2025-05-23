@@ -3,6 +3,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 8px;
+  width: 100vw;
+  height: 10vh;
   border-bottom: 1px solid var(--third-color);
 
   img {
@@ -31,31 +33,43 @@ header {
     span,
     span::after,
     span::before {
-      height: 7px;
+      height: 4px;
       width: 32px;
-      background-color: var(--second-color);
       border-radius: 4px;
     }
-
+    
     span {
       position: relative;
       margin-right: 4px;
       display: inline-block;
+      background-color: black;
     }
-
+    
     span::before,
     span::after {
       content: "";
       position: absolute;
       left: 0;
+      background-color: black;
     }
-
+    
     span::before {
-      top: -10px;
+      transform: translateY(-14px);
     }
-
+    
     span::after {
-      bottom: -10px;
+      transform: translateY(14px);
+    }
+    .show-nav span {
+      background: transparent;
+    }
+    
+    .show-nav span::before {
+      transform: rotate(45deg);
+    }
+    
+    .show-nav span::after {
+      transform: rotate(-45deg);
     }
   }
 }

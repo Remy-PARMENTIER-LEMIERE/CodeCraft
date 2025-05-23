@@ -1,12 +1,19 @@
 import { useState } from "react";
 import "./Navbar.css";
 
-const Navbar = () => {
+interface OpenProps {
+  isOpen: boolean;
+}
+
+const Navbar = ({ isOpen }: OpenProps) => {
   const [openHTML, setOpenHTML] = useState(false);
   const [openCSS, setOpenCSS] = useState(false);
 
   return (
-    <section className="navbar">
+    <section className={`navbar ${isOpen ? "open" : ""}`}>
+      <section className="logo">
+        <img src="src/assets/images/logo_codecraft.webp" alt="logo codecraft" />
+      </section>
       <section className="section">
         <button
           type="button"
