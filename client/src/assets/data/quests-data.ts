@@ -17,7 +17,7 @@ export const questsData = {
             "Découvrons ensemble le language HTML. Tout d'abord, il faut savoir que le language HTML n'est pas un language de programmation mais plutôt un language de structure. Il sert à construire la page de manière logique et sémantique.",
             "« Sémantique vous dites ? » Et bien oui ! Notre code doit avoir du sens par rapport au type de données qu'on veut afficher. Les données affichées seront incluses dans des balises, une ouvrante et une fermante.",
             "Pour un titre principal, le nom de balise est « h1 ». Le titre principal d'une page n'est présent qu'une seule fois. On écrira par exemple : <h1>Voici mon titre</h1>",
-            "À ton tour d'essayer !",
+            "À ton tour d'essayer ! Attention, il faut que tu crées cette balise dans celle appelée body, et pas en dehors.",
           ],
           image: {
             src: "https://www.redacteur.com/blog/wp-content/uploads/sites/6/2022/11/Image-a-la-une-balise-h1.png",
@@ -33,8 +33,12 @@ export const questsData = {
           title: "Créer un paragraphe",
           paragraph: [
             "Nous allons maintenant apprendre à rajouter du texte sur notre page ! Pour cela, nous devons utiliser la balise <p>, dans laquelle nous pouvons écrire le texte de notre choix.",
-            "Plus qu'à essayer !",
+            "Plus qu'à essayer ! Pense toujours bien à l'écrire dans la balise body.",
           ],
+          image: {
+            src: "https://pixabay.com/fr/illustrations/carnet-portable-informatique-1071537/",
+            alt: "Ordinateur portable rouge",
+          },
           sandboxUrl:
             "https://codesandbox.io/embed/5d53cv?view=split&module=%2Findex.html&hidenavigation=1",
           confirmCondition: `textarea.value.includes("<p>") &&
@@ -45,11 +49,15 @@ export const questsData = {
           title: "Insérer une image",
           paragraph: [
             "Maintenant, rajoutons une image. Cela rendra notre page bien plus esthétique. Pour cela, il faut utilser la balise image <img />.",
-            "Attention, celle-ci est dite auto-fermante, elle ne marche pas par paire.",
+            "Attention, celle-ci est dite auto-fermante, elle ne marche pas par paire. Elle doit toujours bien se trouver à l'intérieur de la balise body.",
             "Mais pour que notre image s'affiche, il faut rajouter un attribut appelé \"src\" dans cette balise, et lui dire qu'il est égal au lien vers ton image. Dans un but d'inclusivité, notamment pour les personnes malvoyantes on rajoute un attribut \"alt\" qui décrit l'image et sera lu par l'audio-description.",
             'Pour résumer, le format d\'une balise image est : "<img src="" alt="" />"',
             'Essaye avec ce lien : "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg"',
           ],
+          image: {
+            src: "https://pixabay.com/fr/illustrations/ai-g%C3%A9n%C3%A9r%C3%A9-robot-portable-%C3%A9crivez-8741448/",
+            alt: "Petit robot utilisant un ordinateur",
+          },
           sandboxUrl:
             "https://codesandbox.io/embed/rc86qr?view=split&module=%2Findex.html",
           confirmCondition: `textarea.value.includes("<img") &&
@@ -71,6 +79,10 @@ export const questsData = {
             "Le CSS est un language permettant de changer le style des éléments de ta page de multiples façons. On peut désigner un élément précis dont on veut changer l'apparence, comme un titre identifié par une balise h1 ou une img par exemple, puis on lui attribut un style.",
             "On peut entre autres changer la couleur de fond d'une page ou d'un élément en utilisant la propriété \"background-color: couleur\", où le mot couleur désigne celle que l'on souhaite utiliser (du rose, du bleu, tout est possible !)",
           ],
+          image: {
+            src: "https://www.istockphoto.com/fr/vectoriel/illustration-de-dessin-anim%C3%A9-%C3%A0-plat-concept-de-d%C3%A9veloppement-web-gm1477243684-505912779?utm_source=pixabay&utm_medium=affiliate&utm_campaign=limited-results_illustration&utm_content=srp_topbannerNone_media&utm_term=css",
+            alt: "Illustration CSS",
+          },
           sandboxUrl:
             "https://codesandbox.io/embed/h825tj?view=split&module=%2Fstyles.css",
           confirmCondition: `textarea.value.includes("background-color:"`,
@@ -95,9 +107,29 @@ export const questsData = {
             'Pour centrer du texte sur une page, tu peux utiliser la propriété "text-align: center".',
             "Sache qu'il n'existe pas que la valeur center pour cette propriété, n'hésite surtout pas à chercher et tester d'autres styles si cela t'intéresse.",
           ],
+          image: {
+            src: "https://pixabay.com/fr/illustrations/travail-autonome-programmation-7308505/",
+            alt: "Illustration programmation",
+          },
           sandboxUrl:
             "https://codesandbox.io/embed/mnghrp?view=split&module=%2Fstyles.css",
           confirmCondition: `textarea.value.includes("text-align: center"`,
+        },
+        {
+          id: "css4",
+          title: "Mettre une hauteur",
+        },
+        {
+          id: "css5",
+          title: "Définir une largeur",
+        },
+        {
+          id: "css6",
+          title: "Centrer latéralement un élément",
+        },
+        {
+          id: "css7",
+          title: "Centrer verticalement un élément",
         },
       ],
     },

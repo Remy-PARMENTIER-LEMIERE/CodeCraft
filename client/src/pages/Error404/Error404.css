@@ -26,4 +26,12 @@
     background-color: #b1ababde;
     cursor: pointer;
   }
+
+  iframe {
+    width: 90%;
+    height: 500px;
+    border: solid #000000 2px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
 }
