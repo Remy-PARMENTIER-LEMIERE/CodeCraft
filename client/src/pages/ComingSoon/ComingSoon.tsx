@@ -12,9 +12,7 @@ export default function ComingSoon() {
       <p>
         N'hésitez pas à passer régulièrement pour tester nos nouveaux exercices
       </p>
-      <NavLink to="/">
-        <button type="button">Retour à l'accueil</button>
-      </NavLink>
+      <NavLink to="/">Retour à l'accueil</NavLink>
     </article>
   );
 }

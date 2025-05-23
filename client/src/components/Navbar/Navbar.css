@@ -5,8 +5,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
-  z-index: 10;
+  background-color: var(--primary-color);
+  z-index: 2;
 }
 .navbar.open {
   display: block;
@@ -54,7 +54,7 @@
 .submenu li {
   font-size: 14px;
   margin: 6px 0;
-  color: #555;
+  opacity: 0.6;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -64,20 +64,19 @@ a {
 }
 
 .submenu li:hover {
-  color: #000;
+  opacity: 1;
 }
 
 @media screen and (min-width: 1200px) {
   .navbar {
     width: 260px;
     height: 100vh;
-    width: 240px;
     top: 0;
     padding: 24px 20px;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
     position: fixed;
     font-family: "Segoe UI", sans-serif;
-    border-right: 1px solid #e0e0e0;
+    border-right: 1px solid var(--third-color);
   }
   .logo {
     img {
