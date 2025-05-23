@@ -2,12 +2,19 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import "./Navbar.css";
 
-const Navbar = () => {
+interface OpenProps {
+  isOpen: boolean;
+}
+
+const Navbar = ({ isOpen }: OpenProps) => {
   const [openHTML, setOpenHTML] = useState(false);
   const [openCSS, setOpenCSS] = useState(false);
 
   return (
-    <section className="navbar">
+    <section className={`navbar ${isOpen ? "open" : ""}`}>
+      <section className="logo">
+        <img src="src/assets/images/logo_codecraft.webp" alt="logo codecraft" />
+      </section>
       <section className="section">
         <button
           type="button"
@@ -37,11 +44,19 @@ const Navbar = () => {
           <ul className="submenu">
             <li>Changer la couleur de fond</li>
             <li>Arrondir les bords</li>
-            <NavLink to="/comingsoon" ><li>Mettre une hauteur</li></NavLink>
-            <NavLink to="/comingsoon" ><li>Définir une largeur</li></NavLink>
+            <NavLink to="/comingsoon">
+              <li>Mettre une hauteur</li>
+            </NavLink>
+            <NavLink to="/comingsoon">
+              <li>Définir une largeur</li>
+            </NavLink>
             <li>Centrer du texte</li>
-            <NavLink to="/comingsoon" ><li>Centrer latéralement un élément</li></NavLink>
-            <NavLink to="/comingsoon" ><li>Centrer verticalement un élément</li></NavLink>
+            <NavLink to="/comingsoon">
+              <li>Centrer latéralement un élément</li>
+            </NavLink>
+            <NavLink to="/comingsoon">
+              <li>Centrer verticalement un élément</li>
+            </NavLink>
           </ul>
         )}
       </section>

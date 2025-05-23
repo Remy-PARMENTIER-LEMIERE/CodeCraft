@@ -40,8 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/comingsoon",
-        element: <ComingSoon />
-      }
+        element: <ComingSoon />,
+      },
     ],
   },
   // Try adding a new route! For example, "/about" with an About component
