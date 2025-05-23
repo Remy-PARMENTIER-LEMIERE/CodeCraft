@@ -10,10 +10,13 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const handleCloseMenu = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
 
   return (
     <>
-      <Navbar isOpen={isNavbarOpen} />
+      <Navbar isOpen={isNavbarOpen} handleCloseMenu={handleCloseMenu} />
       <Header
         toggleNavbar={() => setIsNavbarOpen(!isNavbarOpen)}
         isNavbarOpen={isNavbarOpen}
